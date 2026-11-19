@@ -306,6 +306,42 @@ h1 {
   gap: 0.5rem;
 }
 
+.tag-autocomplete-field {
+  display: grid;
+  font-size: 0.88rem;
+  font-weight: 650;
+  gap: 0.5rem;
+}
+
+.tag-autocomplete-control {
+  position: relative;
+}
+
+.tag-suggestions {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  box-shadow: 0 8px 18px rgba(24, 33, 29, 0.12);
+  left: 0;
+  list-style: none;
+  margin: 0;
+  max-height: 14rem;
+  overflow-y: auto;
+  padding: 0.25rem 0;
+  position: absolute;
+  right: 0;
+  top: calc(100% + 0.25rem);
+  z-index: 10;
+}
+
+.tag-suggestions [role="option"] {
+  cursor: pointer;
+  padding: 0.65rem 0.75rem;
+}
+
+.tag-suggestions [role="option"]:hover {
+  background: #eaf2ee;
+}
+
 .full-field {
   grid-column: 1 / -1;
 }
