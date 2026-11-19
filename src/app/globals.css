@@ -338,7 +338,8 @@ h1 {
   padding: 0.65rem 0.75rem;
 }
 
-.tag-suggestions [role="option"]:hover {
+.tag-suggestions [role="option"]:hover,
+.tag-suggestions [role="option"][aria-selected="true"] {
   background: #eaf2ee;
 }
 
